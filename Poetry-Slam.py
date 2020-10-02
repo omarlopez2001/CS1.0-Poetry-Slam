@@ -33,3 +33,21 @@ def lines_printed_custom(lines_list):
         if i % 2 == 0:
             print(i,lines_list[i])
         i += 1
+
+print("Welcome to Poetry Slam! ")
+print("This poem is called 'It Couldn't Be Done' by Edgar Albert Guest ")
+print("Please choose how you would like to read the poem ")
+
+user_response = ""
+
+user_response = input("""Insert a number: 
+1. Backwards
+2. Randomly
+3. Even lines
+I want to read the poem: """)
+if user_response == "1":
+    print(lines_printed_backwards("poem.txt"))
+elif user_response == "2":
+    print(lines_printed_random("poem.txt"))
+elif user_response == "3":
+    print(lines_printed_custom("poem.txt"))
